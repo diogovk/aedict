@@ -115,6 +115,7 @@
     <string name="delete">Delete</string>
     <string name="deleteAll">Delete all</string>
     <string name="addToNotepad">Add to notepad</string>
+    <string name="addAsFlashCard">Add as Flashcard</string>
     <string name="searchingInDictionary">Searching in the %s dictionary</string>
     <string name="deinflectVerbs">Deinflect verbs</string>
     <string name="kanjiDrawWarning">Please note that you must use the proper stroke order and count, otherwise your kanji will not be recognized. Also it does not recognize hiragana nor katakana characters.</string>
@@ -462,6 +463,7 @@
 	<string name="clipboard">Clipboard</string>
 	<string name="tanakaAnalysis">Tanaka Analysis</string>
 	<string name="sendTo">Send To</string>
+	<string name="addTo">Add To</string>
 	<string name="backup">Backup</string>
 	<string name="restore">Restore</string>
 	<string name="restoreNotepad">Restore Notepad</string>

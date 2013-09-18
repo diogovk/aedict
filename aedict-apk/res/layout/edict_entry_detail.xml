@@ -40,15 +40,18 @@
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:orientation="horizontal" android:layout_gravity="center_horizontal"
 				android:layout_marginTop="12dp">
-				<Button android:id="@+id/copy" android:layout_height="wrap_content"
-					android:text="@string/copy" android:layout_width="fill_parent"
-					android:layout_weight="1"/>
-				<Button android:id="@+id/analyze" android:layout_height="wrap_content"
-					android:text="@string/analyze" android:layout_width="fill_parent"
-					android:layout_weight="1"/>
-				<Button android:id="@+id/addToNotepad" android:layout_height="wrap_content"
-					android:text="@string/addToNotepad" android:layout_width="fill_parent"
-					android:layout_weight="1"/>
+				<Button android:id="@+id/copy" android:layout_height="match_parent"
+					android:text="@string/copy" android:layout_width="match_parent"
+					android:layout_gravity="center_vertical"/>
+				<Button android:id="@+id/analyze" android:layout_height="match_parent"
+					android:text="@string/analyze" android:layout_width="match_parent"
+					android:layout_gravity="center_vertical"/>
+				<Button android:id="@+id/addToNotepad" android:layout_height="match_parent"
+					android:text="@string/addToNotepad" android:layout_width="match_parent"
+					android:layout_gravity="center_vertical"/>
+				<Button android:id="@+id/addAsFlashCard" android:layout_height="match_parent"
+					android:text="@string/addAsFlashCard" android:layout_width="match_parent"
+					android:layout_gravity="center_vertical"/>
 			</LinearLayout>
 		</LinearLayout>
 	</LinearLayout>

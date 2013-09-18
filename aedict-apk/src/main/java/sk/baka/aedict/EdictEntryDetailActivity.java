@@ -114,6 +114,17 @@ public class EdictEntryDetailActivity extends AbstractActivity {
 				NotepadActivity.addAndLaunch(EdictEntryDetailActivity.this, entry);
 			}
 		});
+		findViewById(R.id.addAsFlashCard).setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+				Intent intent = new Intent();
+				intent.setAction("org.openintents.action.CREATE_FLASHCARD");
+				intent.putExtra("SOURCE_TEXT", "Aedict Notepad");
+				intent.putExtra("TARGET_TEXT", "[default]\n"+entry.kanji+" ["+entry.reading+"]:"+entry.english);
+				startActivity(Intent.createChooser(intent, getString(R.string.addTo)));
+			}
+		});
+
 	}
 
 	private void displayEntry() {
