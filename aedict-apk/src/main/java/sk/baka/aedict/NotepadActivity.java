@@ -410,7 +410,9 @@ public class NotepadActivity extends Activity implements TabContentFactory {
 					for (int i = 0; i < categories.size(); i++) {
 						sb.append('[').append(categories.get(i)).append("]\n");
 						for (int j = 0; j < getModel(i).size(); j++) {
-							sb.append(getModel(i).get(j).toString()).append('\n');
+							DictEntry de = getModel(i).get(j);
+							sb.append(de.kanji != null? de.kanji : de.reading);
+							sb.append(" [" + de.reading + "]: " + de.english).append('\n');
 						}
 					}
 					final Intent intent = new Intent(Intent.ACTION_SEND);

@@ -120,7 +120,8 @@ public class EdictEntryDetailActivity extends AbstractActivity {
 				Intent intent = new Intent();
 				intent.setAction("org.openintents.action.CREATE_FLASHCARD");
 				intent.putExtra("SOURCE_TEXT", "Aedict Notepad");
-				intent.putExtra("TARGET_TEXT", "[default]\n"+entry.kanji+" ["+entry.reading+"]:"+entry.english);
+                String kanji = entry.kanji != null? entry.kanji: entry.reading;
+				intent.putExtra("TARGET_TEXT", "[default]\n"+kanji+" ["+entry.reading+"]:"+entry.english);
 				startActivity(Intent.createChooser(intent, getString(R.string.addTo)));
 			}
 		});
